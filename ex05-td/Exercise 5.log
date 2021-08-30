@@ -1,0 +1,455 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.26)  27 MAY 2020 15:04
+entering extended mode
+**"./Exercise 5.tex"
+("Exercise 5.tex"
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-05-15>
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count175
+\Gm@cntv=\count176
+\c@Gm@tempcnt=\count177
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen143
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count178
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count179
+\leftroot@=\count180
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count181
+\DOTSCASE@=\count182
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count183
+\c@MaxMatrixCols=\count184
+\dotsspace@=\muskip16
+\c@parentequation=\count185
+\dspbrk@lvl=\count186
+\tag@help=\toks18
+\row@=\count187
+\column@=\count188
+\maxfields@=\count189
+\andhelp@=\toks19
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
+Package: caption 2020/05/10 v3.4j Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
+Package: caption3 2020/05/10 v1.11 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen154
+\captionmargin@=\dimen155
+\captionwidth=\dimen156
+\caption@tempdima=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count190
+\c@continuedfloat=\count191
+)
+\c@subfigure=\count192
+\c@subtable=\count193
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count194
+\float@exts=\toks22
+\float@box=\box47
+\@float@everytoks=\toks23
+\@floatcapt=\box48
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count195
+\l__pdf_internal_box=\box49
+)
+("Exercise 5.aux")
+\openout1 = `"Exercise 5.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-7.86334pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count196
+\scratchdimen=\dimen161
+\scratchbox=\box50
+\nofMPsegments=\count197
+\nofMParguments=\count198
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count199
+\MPscratchDim=\dimen162
+\MPnumerator=\count266
+\makeMPintoPDFobject=\count267
+\everyMPtoPDFconversion=\toks25
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<./images/SarsaV1.jpg, id=1, 286.671pt x 287.8755pt>
+File: ./images/SarsaV1.jpg Graphic file (type jpg)
+<use ./images/SarsaV1.jpg>
+Package pdftex.def Info: ./images/SarsaV1.jpg  used on input line 32.
+(pdftex.def)             Requested size: 209.12683pt x 210.01558pt.
+<./images/SarsaQ1.jpg, id=2, 287.8755pt x 284.86424pt>
+File: ./images/SarsaQ1.jpg Graphic file (type jpg)
+<use ./images/SarsaQ1.jpg>
+Package pdftex.def Info: ./images/SarsaQ1.jpg  used on input line 36.
+(pdftex.def)             Requested size: 209.12683pt x 206.94943pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 31--39
+[][] [] 
+ []
+
+<./images/SarsaPolicy1.jpg, id=3, 43.96425pt x 48.78226pt>
+File: ./images/SarsaPolicy1.jpg Graphic file (type jpg)
+<use ./images/SarsaPolicy1.jpg>
+Package pdftex.def Info: ./images/SarsaPolicy1.jpg  used on input line 43.
+(pdftex.def)             Requested size: 43.96413pt x 48.78212pt.
+<./images/SarsaPlot1.jpg, id=4, 418.56375pt x 329.43076pt>
+File: ./images/SarsaPlot1.jpg Graphic file (type jpg)
+<use ./images/SarsaPlot1.jpg>
+Package pdftex.def Info: ./images/SarsaPlot1.jpg  used on input line 48.
+(pdftex.def)             Requested size: 209.28136pt x 164.71497pt.
+[1
+
+{C:/Users/ASUS/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/Sar
+saV1.jpg> <./images/SarsaQ1.jpg> <./images/SarsaPolicy1.jpg>]
+<./images/QV1.jpg, id=19, 286.06876pt x 286.671pt>
+File: ./images/QV1.jpg Graphic file (type jpg)
+<use ./images/QV1.jpg>
+Package pdftex.def Info: ./images/QV1.jpg  used on input line 53.
+(pdftex.def)             Requested size: 209.12683pt x 209.5699pt.
+<./images/QQ1.jpg, id=20, 289.08pt x 283.0575pt>
+File: ./images/QQ1.jpg Graphic file (type jpg)
+<use ./images/QQ1.jpg>
+Package pdftex.def Info: ./images/QQ1.jpg  used on input line 57.
+(pdftex.def)             Requested size: 209.12683pt x 204.7687pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 52--60
+[][] [] 
+ []
+
+<./images/QPolicy1.jpg, id=21, 46.37325pt x 48.18pt>
+File: ./images/QPolicy1.jpg Graphic file (type jpg)
+<use ./images/QPolicy1.jpg>
+Package pdftex.def Info: ./images/QPolicy1.jpg  used on input line 64.
+(pdftex.def)             Requested size: 46.37312pt x 48.17986pt.
+<./images/QPlot1.jpg, id=22, 433.62pt x 317.38576pt>
+File: ./images/QPlot1.jpg Graphic file (type jpg)
+<use ./images/QPlot1.jpg>
+Package pdftex.def Info: ./images/QPlot1.jpg  used on input line 69.
+(pdftex.def)             Requested size: 216.80946pt x 158.69249pt.
+[2 <./images/SarsaPlot1.jpg> <./images/QV1.jpg> <./images/QQ1.jpg> <./images/QP
+olicy1.jpg>]
+<./images/SarsaV2.jpg, id=26, 287.27325pt x 286.671pt>
+File: ./images/SarsaV2.jpg Graphic file (type jpg)
+<use ./images/SarsaV2.jpg>
+Package pdftex.def Info: ./images/SarsaV2.jpg  used on input line 77.
+(pdftex.def)             Requested size: 209.12683pt x 208.69067pt.
+<./images/SarsaQ2.jpg, id=27, 284.262pt x 281.25075pt>
+File: ./images/SarsaQ2.jpg Graphic file (type jpg)
+<use ./images/SarsaQ2.jpg>
+Package pdftex.def Info: ./images/SarsaQ2.jpg  used on input line 81.
+(pdftex.def)             Requested size: 209.12683pt x 206.91635pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 76--84
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--84
+\OT1/cmr/m/n/10 learning.
+ []
+
+<./images/SarsaPolicy2.jpg, id=28, 49.98676pt x 49.98676pt>
+File: ./images/SarsaPolicy2.jpg Graphic file (type jpg)
+<use ./images/SarsaPolicy2.jpg>
+Package pdftex.def Info: ./images/SarsaPolicy2.jpg  used on input line 88.
+(pdftex.def)             Requested size: 49.98662pt x 49.98662pt.
+[3 <./images/QPlot1.jpg> <./images/SarsaV2.jpg> <./images/SarsaQ2.jpg>]
+<./images/SarsaPlot2.jpg, id=32, 432.4155pt x 319.1925pt>
+File: ./images/SarsaPlot2.jpg Graphic file (type jpg)
+<use ./images/SarsaPlot2.jpg>
+Package pdftex.def Info: ./images/SarsaPlot2.jpg  used on input line 93.
+(pdftex.def)             Requested size: 216.20721pt x 159.59586pt.
+<./images/QV2.jpg, id=33, 284.262pt x 281.853pt>
+File: ./images/QV2.jpg Graphic file (type jpg)
+<use ./images/QV2.jpg>
+Package pdftex.def Info: ./images/QV2.jpg  used on input line 98.
+(pdftex.def)             Requested size: 209.12683pt x 207.35945pt.
+<./images/QQ2.jpg, id=34, 284.86424pt x 284.262pt>
+File: ./images/QQ2.jpg Graphic file (type jpg)
+<use ./images/QQ2.jpg>
+Package pdftex.def Info: ./images/QQ2.jpg  used on input line 102.
+(pdftex.def)             Requested size: 209.12683pt x 208.68498pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 97--105
+[][] [] 
+ []
+
+<./images/QPolicy2.jpg, id=35, 45.16875pt x 46.37325pt>
+File: ./images/QPolicy2.jpg Graphic file (type jpg)
+<use ./images/QPolicy2.jpg>
+Package pdftex.def Info: ./images/QPolicy2.jpg  used on input line 109.
+(pdftex.def)             Requested size: 45.16862pt x 46.37312pt.
+[4 <./images/SarsaPolicy2.jpg> <./images/SarsaPlot2.jpg> <./images/QV2.jpg> <./
+images/QQ2.jpg>]
+<./images/QPlot2.jpg, id=39, 430.60875pt x 317.38576pt>
+File: ./images/QPlot2.jpg Graphic file (type jpg)
+<use ./images/QPlot2.jpg>
+Package pdftex.def Info: ./images/QPlot2.jpg  used on input line 114.
+(pdftex.def)             Requested size: 215.30383pt x 158.69249pt.
+<./images/SarsaV3.jpg, id=40, 287.8755pt x 287.27325pt>
+File: ./images/SarsaV3.jpg Graphic file (type jpg)
+<use ./images/SarsaV3.jpg>
+Package pdftex.def Info: ./images/SarsaV3.jpg  used on input line 119.
+(pdftex.def)             Requested size: 209.12683pt x 208.69954pt.
+<./images/SarsaQ3.jpg, id=41, 443.256pt x 445.665pt>
+File: ./images/SarsaQ3.jpg Graphic file (type jpg)
+<use ./images/SarsaQ3.jpg>
+Package pdftex.def Info: ./images/SarsaQ3.jpg  used on input line 123.
+(pdftex.def)             Requested size: 209.12683pt x 210.26501pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 118--126
+[][] [] 
+ []
+
+<./images/SarsaPolicy3.jpg, id=42, 91.542pt x 96.36pt>
+File: ./images/SarsaPolicy3.jpg Graphic file (type jpg)
+<use ./images/SarsaPolicy3.jpg>
+Package pdftex.def Info: ./images/SarsaPolicy3.jpg  used on input line 130.
+(pdftex.def)             Requested size: 91.54178pt x 96.35974pt.
+[5 <./images/QPolicy2.jpg> <./images/QPlot2.jpg> <./images/SarsaV3.jpg> <./imag
+es/SarsaQ3.jpg>]
+<./images/SarsaPlot3.jpg, id=46, 431.81325pt x 320.397pt>
+File: ./images/SarsaPlot3.jpg Graphic file (type jpg)
+<use ./images/SarsaPlot3.jpg>
+Package pdftex.def Info: ./images/SarsaPlot3.jpg  used on input line 135.
+(pdftex.def)             Requested size: 215.90608pt x 160.1981pt.
+<./images/QV3.jpg, id=47, 286.671pt x 283.65974pt>
+File: ./images/QV3.jpg Graphic file (type jpg)
+<use ./images/QV3.jpg>
+Package pdftex.def Info: ./images/QV3.jpg  used on input line 140.
+(pdftex.def)             Requested size: 209.12683pt x 206.94003pt.
+<./images/QQ3.jpg, id=48, 444.4605pt x 444.4605pt>
+File: ./images/QQ3.jpg Graphic file (type jpg)
+<use ./images/QQ3.jpg>
+Package pdftex.def Info: ./images/QQ3.jpg  used on input line 144.
+(pdftex.def)             Requested size: 209.12683pt x 209.12704pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 139--147
+[][] [] 
+ []
+
+<./images/QPolicy3.jpg, id=49, 89.133pt x 96.96225pt>
+File: ./images/QPolicy3.jpg Graphic file (type jpg)
+<use ./images/QPolicy3.jpg>
+Package pdftex.def Info: ./images/QPolicy3.jpg  used on input line 151.
+(pdftex.def)             Requested size: 89.13277pt x 96.962pt.
+[6 <./images/SarsaPolicy3.jpg> <./images/SarsaPlot3.jpg> <./images/QV3.jpg> <./
+images/QQ3.jpg>]
+<./images/QPlot3.jpg, id=53, 428.19975pt x 320.397pt>
+File: ./images/QPlot3.jpg Graphic file (type jpg)
+<use ./images/QPlot3.jpg>
+Package pdftex.def Info: ./images/QPlot3.jpg  used on input line 156.
+(pdftex.def)             Requested size: 214.09935pt x 160.1981pt.
+ [7 <./images/QPolicy3.jpg> <./images/QPlot3.jpg>]
+("Exercise 5.aux") ) 
+Here is how much of TeX's memory you used:
+ 4190 strings out of 480795
+ 62768 string characters out of 2905360
+ 300504 words of memory out of 3000000
+ 20154 multiletter control sequences out of 15000+200000
+ 535884 words of font info for 38 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 45i,17n,47p,283b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmti10.pfb>
+Output written on "Exercise 5.pdf" (7 pages, 1041237 bytes).
+PDF statistics:
+ 90 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+

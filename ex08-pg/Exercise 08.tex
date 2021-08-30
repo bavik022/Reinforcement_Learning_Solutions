@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\graphicspath{{./images/}}
+\begin{document}
+\begin{center}
+	{\LARGE Exercise 8}\linebreak
+	{\large [Avik Banerjee (3374885), Soumyadeep Bhattacharjee (3375428)]}
+\end{center}
+\section{REINFORCE on the Cart-Pole}
+Equation for the policy with two actions $a$ and $b$:
+\begin{equation*}
+\pi(a|s, \theta) = \frac{e^{h(s,a,\theta)}}{e^{h(s,a,\theta)} + e^{h(s,b,\theta)}} = \frac{e^{\theta_a^\top s}}{e^{\theta_a^\top s} + e^{\theta_b^\top s}}
+\end{equation*}
+Derivative of the policy with respect to $\theta$:
+\begin{equation*}
+\begin{split}
+\nabla_\theta \pi(a|s, \theta) &= \nabla_\theta\Big[ \frac{e^{\theta_a^\top s}}{e^{\theta_a^\top s} + e^{\theta_b^\top s}}\Big] \\
+& = \begin{bmatrix}
+\nabla_{\theta_a}^\top \Big(\frac{e^{\theta_a^\top s}}{e^{\theta_a^\top s} + e^{\theta_b^\top s}}\Big) \\
+\nabla_{\theta_b}^\top \Big(\frac{e^{\theta_a^\top s}}{e^{\theta_a^\top s} + e^{\theta_b^\top s}} \Big)
+\end{bmatrix}
+\end{split}
+\end{equation*}
+\end{document}

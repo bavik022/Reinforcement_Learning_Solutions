@@ -1,0 +1,142 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\begin{document}
+\begin{center}
+	{\LARGE Exercise 2}\linebreak
+	{\large [Avik Banerjee (3374885), Soumyadeep Bhattacharjee (3375428)]}
+\end{center}
+\textit{Text in italics are notes taken during the tutorial.}
+\section{Formulating Problems}
+\textit{For large/infinite state spaces, the MDP will be continuous, the state space may be the space of real numbers. However, the state space may be discretized and formulated as a finite MDP (as in the case of formulating 2D space as a grid world). Value or function approximators can be used to discrtize the state space. A grid world can have upper or lower bounds or may be infinite.}
+\begin{enumerate}
+	\item[a)] \textbf{Chess:}
+	\begin{itemize}
+		\item \textbf{State space:} All possible combination of legal piece positions on an $8\times 8$ grid make up the state space of chess.
+		\item \textbf{Action space:}  Set of all legal moves corresponding to each piece.
+		\item \textbf{Transitions:} Deterministic.
+		\item \textbf{Rewards:} Opponent Wins = -1, 
+		Player wins = +1, \textit{0 else}
+	\end{itemize}
+	\item[b)]\textbf{Pick and Place Robot:}
+	\begin{itemize}
+		\item \textbf{State space:} Working space of the robot divided into finite grids (e.g. $1000\times 1000$). \textit{Camera image can also be used as an observation or for determining the state, but occlusions can cause hindrance. If the camera image is the state space, the states will be Markov states only if a single image is observed at a point of time to determine the next state, multiple states are not stacked. }
+		\item \textbf{Action space:}  All possible movements of the robot: [Up, Down, Left, Right]
+		+
+		All possible movements of the forklift [Up, Down].		
+		\item \textbf{Transitions:} Stochastic.
+		\item \textbf{Rewards:} Each box placed = +1,		
+		Battery runs out before placing 5 boxes = -1, \textit{Continuous reward: distance of object to goal position, discrete reward: object placed in correct position.}		
+	\end{itemize}
+	\item[c)]\textbf{Drone that stabilizes in the air:}
+	\begin{itemize}
+		\item \textbf{State space:} The angle between the arms for the drone and a pre-set perpendicular to the ground (Stable reference angle) can be divided into N States. Based on the current state(or angle) the next action to balance the drone can be chosen.
+		\item \textbf{Action space:}  All possible movements of the drone:
+		[Up, Down, Left, Right, Diagonal Tilt].	\textit{Control signals for propellers.}	
+		\item \textbf{Transitions:} Stochastic.
+		\item \textbf{Rewards:} Each deviation from the Stable State (reference angle) = -1, Reaching stable state= +1. \textit{Negative reward for velocities, negative reward for crash.}			
+	\end{itemize}
+	\item[d)]\textbf{Self-driving car:}
+	\begin{itemize}
+		\item \textbf{State space:} Total ($M\times N$) localized state space centered around the car with a grid of $M\times N$. 
+		\item \textbf{Action space:}  All possible movements of the car:
+		[Throttle Up, Throttle Down, Steer Left, Steer Right, Brake, No-Action]			
+		\item \textbf{Transitions:} Stochastic.
+		\item \textbf{Rewards:} Any contact with obstacles = -100, Fuel Runs out / Need to be picked-up = -10, Reaching the destination= +10, Reaching destination before stipulated time = +100.	
+	\end{itemize}
+\end{enumerate}
+\section{Value Functions}
+\begin{enumerate}
+	\item A multi-armed bandit has only one state and no transition of state occurs when an action is performed. Each of the arms has a fixed distribution of rewards and the rewards to be acquired in the future does not depend on the present choice of an arm. Hence maximizing the cumulative reward for $T$ trials simply means maximizing the immediate reward at every trial. On the other hand, in an MDP, the future states the agent will traverse depend on the current state and the current action taken by the agent, because of which the expected cumulative reward changes with the policy, whereby future rewards need to be taken into account.
+	\item 
+	\begin{equation*}
+	\begin{split}
+	v_\pi (s) &= \mathbb{E}_\pi[G_t\, |\, S_t = s]\\
+	&= \sum_a\text{Pr}\,\{A_t = a \,|\, S_t = s\}\;\mathbb{E}_\pi[G_t\, |\, S_t = a, A_t = a]\\
+	&= \sum_a\pi (a \,|\, s)\;\mathbb{E}_\pi[G_t\, |\, S_t = a, A_t = a]\\
+	&= \sum_a\pi (a \,|\, s)\;q_\pi(s, a)
+	\end{split}
+	\end{equation*}
+	\item 
+	\begin{equation*}
+	\begin{split}
+	v_\pi (s) &= \mathbb{E}_\pi[G_t\, |\, S_t = s]\\
+	&= \sum_a\pi (a \,|\, s)\;\sum_{s'}\sum_r p(s',r\,|\,s,a)\big[r + \gamma v_\pi(s')\big]
+	\end{split}
+	\end{equation*}
+	Now, 
+	\begin{equation*}
+	p(s'\,|\, s,a) = Pr\,\{S_{t+1}=s'\,|\, S_t=s,A_t=a\}
+	\end{equation*}
+	and
+	\begin{equation*}
+	r(s,a,s') = \mathbb{E}[R_{t+1}\, | \, S_t = s, A_t=a, S_{t+1}=s']
+	\end{equation*}
+	Hence,
+	\begin{equation*}
+	\sum_{s',r}p(s',r\,|\,s,a)\,r = \sum_{s'}p(s'\,|\,s,a)\,r(s,a,s')
+	\end{equation*}
+	and
+	\begin{equation*}
+	\begin{split}
+	\sum_{s',r}p(s',r\,|\,s,a)\,\gamma v_\pi(s') &= \sum_{s'}p(s'\,|\,s,a)\,\sum_r p(r\, |\, s,a,s')\,\gamma v_\pi(s')\\
+	&= \sum_{s'}p(s'\,|\,s,a)\,\gamma v_\pi(s')
+	\end{split}
+	\end{equation*}
+	$\therefore$ the recursive relationship can be defined as 
+	\begin{equation*}
+	\begin{split}
+	v_\pi(s) &= \sum_a\pi (a \,|\, s)\;\sum_{s'}\sum_r p(s',r\,|\,s,a)\big[r + \gamma v_\pi(s')\big]\\
+	&= \sum_a\pi (a \,|\, s)\;\sum_{s'}\sum_r p(s',r\,|\,s,a)\,r + \sum_{s'}\sum_r p(s',r\,|\,s,a)\,\gamma v_\pi(s')\\
+	&= \sum_a\pi (a \,|\, s)\;\sum_{s'} p(s'\,|\,s,a)\,r(s,a,s') + \sum_{s'} p(s'\,|\,s,a)\,\gamma v_\pi(s')\\
+	&= \sum_a\pi (a \,|\, s)\;\sum_{s'} p(s'\,|\,s,a)\,\big[r(s,a,s') + \gamma v_\pi(s')\big]
+	\end{split}
+	\end{equation*}
+\end{enumerate}
+\section{Bruteforce the Policy Space}
+\begin{enumerate}
+	\item[a)] The number of possible policies is $|\mathcal{A}|^{|\mathcal{S}|}$.
+	\item[b)] 
+	\begin{equation*}
+	\begin{split}
+	&v_\pi =r + \gamma P_\pi v_\pi\\
+	\Rightarrow\; &\big(I - \gamma P_\pi\big)v_\pi=r\\
+	\Rightarrow\; &v_\pi=\big(I - \gamma P_\pi\big)^{-1}\,r
+	\end{split}
+	\end{equation*}
+	\item[b)] The output:
+	\begin{verbatim}
+	Value function for policy_left (always going left):
+	[0.         0.         0.53691275 0.         0.         1.47651007
+	0.         0.         5.        ]
+	
+	Value function for policy_right (always going right):
+	[0.41401777 0.77456266 1.31147541 0.36398621 0.8185719  2.29508197
+	0.13235862 0.         5.        ]
+	\end{verbatim}
+	This is entirely expected since going left from every state takes the agent away from the terminal state (goal) and the agent has a lower probability of reaching the goal, which leads to a low cumulative reward. However going right from every state takes the agent closer to the goal and the agent has a higher probability of landing in the goal.
+	\item[c)] The optimal value function $v_*$:
+	\begin{verbatim}
+	[0.49756712 0.83213812 1.31147541 0.53617147 0.97690441 2.29508197
+	0.3063837  0.         5.        ]
+	\end{verbatim}
+	The number of optimal policies is 32.
+	\textit{For both down and up the probabilities are 1/3 to stay at top-left, 1/3 to go to the right, 1/3 to go down so it does not make any difference.}
+	The optimal actions are as follows:
+	\begin{enumerate}
+		\item[1.] up, right
+		\item[2.] right
+		\item[3.] right
+		\item[4.] down
+		\item[5.] down
+		\item[6.] right
+		\item[7.] left \textit{, because by taking left, the agent will be still in state 7 or will be in the state 4, it won't go into the hole.}
+		\item[8.] any action
+		\item[9.] any action
+	\end{enumerate}
+	\item[d)] The brute force approach is applicable only for a small solution space. In realistic scenarios, the action and state spaces are too large for brute force to be a feasible approach.\linebreak
+	\textit{Accurate knowledge of dynamics is assumed.}
+\end{enumerate}
+\end{document}

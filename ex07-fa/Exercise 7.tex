@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\graphicspath{{./images/}}
+\begin{document}
+\begin{center}
+	{\LARGE Exercise 7}\linebreak
+	{\large [Avik Banerjee (3374885), Soumyadeep Bhattacharjee (3375428)]}
+\end{center}
+\textit{Text in italics are notes taken during the tutorial}
+\section{Planning and Learning}
+\begin{enumerate}
+	\item[a)]In linear function approximation, the value of a state is approximated as a linear combination of a feature vector $\textit{\textbf{x}}(s)$ and a weight vector $\textit{\textbf{w}}$, such that $\hat{v}(s,\textit{\textbf{w}}) = \textit{\textbf{x}}(s)\cdot\textit{\textbf{w}}$.
+	
+	In the tabular case, we simply store the dervied value function for each state. The feature vector for each state can be constructed as a one-hot indicator vector with $x_i(s) = 1$ only for the present state and 0 for all other states. Then the weight vector $\textit{\textbf{w}}$ will consist of values corresponding to individual states such that $\textit{\textbf{x}}(s)\cdot\textit{\textbf{w}}$ will give the value of one particular state.
+	\item[b)] Update rules for Sarsa($\lambda$) [while updating the state action values]:
+	\begin{itemize}
+		\item In the tabular case:
+		we need an eligibility trace for each action value pair:
+		\begin{equation*}
+		\begin{split}
+		&E_0(s,a) = 0\\
+		&E_t(s,a) = \gamma\lambda E_{t-1}(s,a)+\mathbf{1}(S_t=s, A_t=a)
+		\end{split}
+		\end{equation*}
+		Then we update $Q(s,a)$ for every $(S,A)$ proportionally to TD-error $\delta_t$:
+		\begin{equation*}
+		\begin{split}
+			&\delta_t = R_{t+1} + \gamma Q(S_{t+1}, A_{t+1}) - Q(S_t, A_t)\\
+			&Q(S, A) \leftarrow Q(S,A) + \alpha\delta_t E_t(S,A) 
+		\end{split}
+		\end{equation*}
+		\item With function approximation:
+		The state action value function is parameterized by the weights $\textbf{w}$. Hence the weights need to be updated in each step:
+		\begin{equation*}
+		\textbf{w}_{t+1} = \textbf{w}_t + \alpha[Q_\pi(S_t, A_t) - \hat{Q}(S_t, A_t, \textbf{w}_t)]\nabla\hat{Q}(S_t, A_t, \textbf{w})
+		\end{equation*}
+		where $\hat{Q}$ is the approximated Q function using weights $\textbf{w}$. The update uses stochastic gradient descent to find the local minimum. $Q_\pi$ is the true value function which is used to find the error in each step.
+		\item With linear function approximation: Using linear function approximation, each state-action pair is represented by a feature vector $\textbf{x}(s,a)$. In this case, the derivative
+		\begin{equation*}
+		\nabla\hat{Q}(S_t, A_t, \textbf{w}) = \textbf{x}(s,a)
+		\end{equation*}
+		Hence, the update step is 
+		\begin{equation*}
+		\textbf{w}_{t+1} = \textbf{w}_t + \alpha[Q_\pi(S_t, A_t) - \hat{Q}(S_t, A_t, \textbf{w}_t)]\textbf{x}(s,a)
+		\end{equation*}
+	\end{itemize}
+\end{enumerate}
+\end{document}
